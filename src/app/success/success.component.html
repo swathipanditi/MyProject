@@ -1,0 +1,11 @@
+<!--<p [ngStyle]="{backgroundColor: getColor()}" 
+   [ngClass]="{online: serverStatus=== 'online'}">{{ 'server' }} is with {{ serverId }} is {{ getServerStatus() }}</p>-->
+<button (click)= "getsecret()" >Display Details</button>
+<p *ngIf= "noSecret"
+>Secret Password = tuna</p>
+<span [ngStyle]="{backgroundColor: items.length > 5 ? 'blue' : 'red'} ">
+    <p *ngFor="let item of items">
+        {{item}}  
+     </p>
+</span>
+
